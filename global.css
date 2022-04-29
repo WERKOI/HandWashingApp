@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+body {/*форматирование HTML-документа*/
+  font-family: 'Lato', sans-serif;
+}
+
+button {/*стиль кнопки*/
+	border: none;/*границы*/
+	color: #fff;/*цвет*/
+	padding: 15px 32px;/*отступы/поля*/
+	text-align: center;/*выравнивание*/
+	text-decoration: none;/*внешний вид декоративных линий*/
+	display: inline-block;/*задаёт блочный или встроенный элемент*/
+	font-size: 16px;/*размер шрифта*/
+	outline: none;/*задаёт большинство свойст контура*/
+	flex: 1;/*сколько свободного пространства каждый flex сможет занять*/
+	cursor: pointer;/*вид курсора*/
+  }
+  
+  .sr-only {/*сокрытие информации*/
+	display: none;
+  }
