@@ -3,19 +3,28 @@
 </script>
 
 <style>
-    .progress-container {/*задаём стиль классу*/
-        margin: 20px 0;/*определяем отступ*/
-        border: solid rgb(194, 194, 194) 1px;/*определяем границы*/
+    /* задаём стиль классу */
+    .progress-container {
+        /* определяем отступ */
+        margin: 20px 0;
+        /* определяем границы */
+        border: solid rgb(194, 194, 194) 1px;
     }
-    .progress-bar {/*задаём стиль классу*/
-        height: 30px; /*определяем высоту*/
-        background-color: rgb(77, 199, 55);/*определить задний свет*/
+    /* задаём стиль классу */
+    .progress-bar {
+        /* определяем высоту */
+        height: 30px; 
+        /* определить задний свет */
+        background-color: rgb(77, 199, 55);
     }
 </style>
 
 <div bp="grid">
-    <div bp="offset-5@md 4@md 12@sm" class="progress-container"><!--контейнер, создаём класс progress-container-->
-    <div class="progress-bar" style="width: {progress}%"></div><!--контейнер, создаём класс progress-bar-->
-    <span class="sr-only">%{progress}</span><!--строковой контейнер, создаём класс-->
+    <!-- контейнер, создаём класс progress-container -->
+    <div bp="offset-5@md 4@md 12@sm" class="progress-container">
+    <!-- контейнер, создаём класс progress-bar -->
+    <div class="progress-bar" style="width: {progress}%"></div>
+    <!-- строковой контейнер, создаём класс -->
+    <span class="sr-only">%{progress}</span>
     </div>  
 </div>

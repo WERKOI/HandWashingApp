@@ -1,27 +1,41 @@
-<script>//отвечает за создание функционала страницы
-	import Timer from './Timer.svelte'; // импорт файлов в App.svelte
+<!-- отвечает за создание функционала страницы -->
+<script>
+	// импорт файлов в App.svelte
+	import Timer from './Timer.svelte';
 	import HowTo from './HowTo.svelte';	
-	let audio; //добавляем переменную
-	function timerEnds(e){ //функция запускает аудио
+
+	//добавляем переменную
+	let audio; 
+
+	//функция запускает аудио
+	function timerEnds(e){ 
 		audio.play();
 	}
 </script>
 
-<h1>Handwashing App</h1><!--Заголовок-->
+<!-- заголовок -->
+<h1>Handwashing App</h1>
 
-<style>/*отвечает за стиль страницы*/
+<!-- отвечает за стиль страницы -->
+<style>
+	/*выравнивание по ширине*/
 	h1, 
-	h3 {/*выравнивание по ширине*/
-		text-align:center;/*выравнавание по центру*/
+	h3 {
+		/*выравнавание по центру*/
+		text-align:center;
 	}
 </style>
 
-<Timer on:end={timerEnds}/><!--Вызов Timer.svelte-->
+<!-- вызов Timer.svelte -->
+<Timer on:end={timerEnds}/>
 
-<HowTo /><!--Вызов HowTo.svelte-->
+<!-- вызов HowTo.svelte -->
+<HowTo />
 
-<h3><!--ссылки на ресурсы-->
-	<a href="https://www.who.int/gpsc/clean_hands_protection/en/"><!--обращение к ссылке href-->
+<!-- ссылки на ресурсы -->
+<h3>
+	<!-- обращение к ссылке href -->
+	<a href="https://www.who.int/gpsc/clean_hands_protection/en/">
 		Picture Source
 	</a>
 
@@ -30,6 +44,8 @@
 	</a>
 </h3>
 
-<audio bind:this={audio}><!--добавляем звуковой контент-->>
-	<source src="public_sound.wav" /><!--указывает медиа ресурсы-->>
+<!-- добавляем звуковой контент -->
+<audio bind:this={audio}>
+	<!-- указывает медиа ресурсы -->
+	<source src="public_sound.wav" />
 </audio>
